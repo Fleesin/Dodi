@@ -1,9 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>Bienvenido a DODi</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+<ion-card-content style="display: flex; justify-content: center; flex-direction: column">
+  <div align = "center" margin= "40px"><img src="assets/icon/logo.png" id="icon" margin="40px" height="150px"  width="200px" style="display:inline-block"/></div>
+  <div align="right">
+    <div id="new_user">
+      <span>Nuevo usuario?</span>
+    </div>
+    <ion-button no-border="true" color= "secondary" href="/register" router-direction='forward'><div color="#640808">Crear cuenta</div> </ion-button></div>
+  <div id="Correo_electronico">
+		<span>Correo electronico</span>
+	</div>
+  <input type="text" id="box_type" name="email"><br>
+  <br>
+  <div id="Contrasena">
+		<span>Contraseña</span>
+	</div>
+  <input type="text" id="box_type" name="password"><br>
+</ion-card-content>
+<br>
+  <div align="center"><ion-button (click)= "login()" expand="">Ingresar</ion-button></div>
 
 </ion-content>

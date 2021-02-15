@@ -1,0 +1,50 @@
+#box_type {
+    position: relative;
+	overflow: visible;
+	width: auto;
+	height: 40px;
+	border: 2px solid black;
+	padding: 2px 6px;
+	left: 0px;
+	margin-right: 10px;
+	margin-left: 10px;
+	top: 0px;
+}
+
+#Correo_electronico {
+    left: 36px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    color: rgba(57,57,57,1);
+}
+#icon
+{
+	margin: 30px;
+}
+#new_user{
+    left: 40px;
+	position: absolute;
+	overflow: visible;
+	width: 125px;
+	white-space: nowrap;
+	line-height: 24px;
+	margin-top: 8px;
+	text-align: left;
+	font-family: Noto Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(61,61,61,1);
+}
+#Contrasena {
+    left: 36px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    color: rgba(57,57,57,1);
+}

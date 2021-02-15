@@ -13,10 +13,11 @@ export class AuthenticationService {
       this.checkToken;
     });
   }
+  
 
   login(){
     return this.storage.set(TOKEN_KEY, 'Dodi 123456').then(res => {
-      this.authenticationState.next(true);
+      this.authenticationState.next(true);  
     });
 
   }
