@@ -26,20 +26,20 @@ export class AppComponent {
   }
 
   initializeApp(){
-    this.platform.ready().then(()=>{
+    // this.platform.ready().then(()=>{
 
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-      this.authService.authenticationState.subscribe(state =>{
-        console.log('Auth changed', state);
-        if (state) {
-          this.router.navigate(['members', 'dashboard','tab1'])
-        } else{
-          this.router.navigate(['login']);
-        }
+    //   this.statusBar.styleDefault();
+    //   this.splashScreen.hide();
+    //   this.authService.authenticationState.subscribe(state =>{
+    //     console.log('Auth changed', state);
+    //     if (state) {
+    //       this.router.navigate(['members', 'dashboard','tab1'])
+    //     } else{
+    //       this.router.navigate(['login']);
+    //     }
 
-      });
-    });
+    //   });
+    // });
   
   }
 }
