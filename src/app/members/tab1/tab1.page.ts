@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from 'src/app/services/authentication.service';
+import {  MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -8,11 +9,14 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
 })
 export class Tab1Page {
 
-  constructor(private authService: AuthenticationService) {}
+  constructor(private authService: AuthenticationService, public menuCtrl: MenuController) {}
 
   ngOnInit() {
   }
   logout(){
     this.authService.logout();
   }
+  ionViewWillEnter() {
+    this.menuCtrl.enable(true);
+   }
 }
