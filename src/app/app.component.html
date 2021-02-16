@@ -11,15 +11,27 @@
       </div>
       
       <ion-list class="menu-items" lines="none">
-        <ion-item>
-          <ion-icon></ion-icon>Mi perfil
-        </ion-item>
-        <ion-item>
-          <ion-icon></ion-icon>Mis pedidos
-        </ion-item>
-        <ion-item class="active">
-          <ion-icon></ion-icon>Centro de ayuda
-        </ion-item>
+        <div id="boton" class="action-button" >
+          <ion-button color="secondary">
+            <ion-icon slot="start">
+          </ion-icon>
+            Mi perfil
+          </ion-button>
+        </div>
+        <div id="boton" class="action-button" >
+          <ion-button color="secondary">
+            <ion-icon slot="start">
+          </ion-icon>
+            Mis pedidos
+          </ion-button>
+        </div>
+        <div class="action-button" id="boton">
+          <ion-button color="secondary">
+            <ion-icon slot="start">
+          </ion-icon>
+            Centro de ayuda
+          </ion-button>
+        </div>
         <br>
         <br> 
         <br>
@@ -28,10 +40,10 @@
         <br> 
         <br>
         <br>
-        <div id="logout" class="action-button">
+        <div class="action-button">
           <ion-button (click) = "logout()">
             <ion-icon  name="exit-outline" slot="start">
-            </ion-icon>
+          </ion-icon>
             Logout
           </ion-button>
         </div>
