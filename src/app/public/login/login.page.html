@@ -1,16 +1,18 @@
-<!-- <ion-header>
+<ion-header>
   <ion-toolbar>
     <ion-title>Bienvenido a DODi</ion-title>
   </ion-toolbar>
-</ion-header> -->
+</ion-header>
 
-<ion-content class="container">
-
-  <div class="login-logo" >
-    <img src="assets/icon/logo.png"  height="120px"  width="120px" />
-  </div>
-
-  <!-- <div id="Correo_electronico">
+<ion-content padding>
+<ion-card-content style="display: flex; justify-content: center; flex-direction: column">
+  <div align = "center" margin= "40px"><img src="assets/icon/logo.png" id="icon" margin="40px" height="150px"  width="200px" style="display:inline-block"/></div>
+  <div align="right">
+    <div id="new_user">
+      <span>Nuevo usuario?</span>
+    </div>
+    <ion-button no-border="true" color= "secondary" href="/register" router-direction='forward'><div color="#640808">Crear cuenta</div> </ion-button></div>
+  <div id="Correo_electronico">
 		<span>Correo electronico</span>
 	</div>
   <input type="text" id="box_type" name="email"><br>
@@ -19,24 +21,8 @@
 		<span>Contraseña</span>
 	</div>
   <input type="text" id="box_type" name="password"><br>
-
-<br> -->
-
-<form class="login-form" (ngSubmit)="login()">
- 
-  <input type="text" class="email" [(ngModel)]="todo.email" name="email" placeholder="Correo electrónico" />
-
-  <input type="password" class="password" [(ngModel)]="todo.password" name="password" placeholder="Contraseña"/>
-
-  <button class="login-btn">Ingresar</button>
-</form>
-
-
-  <div class="register-link">
- 
-      <p>¿Aún no tienes cuenta? <a href="/register">Registrate.</a></p>
-
-  </div>
-
+</ion-card-content>
+<br>
+  <div align="center"><ion-button (click)= "login()" expand="">Ingresar</ion-button></div>
 
 </ion-content>
