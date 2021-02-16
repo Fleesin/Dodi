@@ -24,7 +24,9 @@ export class AppComponent {
   ) {
     this.initializeApp();
   }
-
+  logout(){
+    this.authService.logout();
+  }
   initializeApp(){
     this.platform.ready().then(()=>{
 

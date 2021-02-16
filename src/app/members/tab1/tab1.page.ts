@@ -12,7 +12,6 @@ export class Tab1Page {
 
   ngOnInit() {
   }
-
   logout(){
     this.authService.logout();
   }
