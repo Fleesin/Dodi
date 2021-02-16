@@ -12,26 +12,27 @@
       
       <ion-list class="menu-items" lines="none">
         <div id="boton" class="action-button" >
-          <ion-button color="secondary">
+          <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/mis-pedidos">
             <ion-icon slot="start">
           </ion-icon>
             Mi perfil
           </ion-button>
         </div>
         <div id="boton" class="action-button" >
-          <ion-button color="secondary">
+          <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/mis-pedidos" color="secondary">
             <ion-icon slot="start">
           </ion-icon>
             Mis pedidos
           </ion-button>
         </div>
         <div class="action-button" id="boton">
-          <ion-button color="secondary">
+          <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/mis-pedidos" color="secondary">
             <ion-icon slot="start">
           </ion-icon>
             Centro de ayuda
           </ion-button>
         </div>
+        
         <br>
         <br> 
         <br>

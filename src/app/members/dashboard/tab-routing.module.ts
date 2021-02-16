@@ -20,12 +20,23 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'mis-pedidos',
+        loadChildren: () => import('../mis-pedidos/mis-pedidos.module').then(m => m.MisPedidosPageModule)
+      },
+      {
+        path: 'mi-perfil',
+        loadChildren: () => import('../mi-perfil/mi-perfil.module').then(m => m.MiPerfilPageModule)
+      },
+      {
+        path: 'centro-ayuda',
+        loadChildren: () => import('../centro-ayuda/centro-ayuda.module').then(m => m.CentroAyudaPageModule)
+      },
+      {
         path: '',
         component: DashboardPage
       }
     ]
   },
-
 ];
 
 @NgModule({
