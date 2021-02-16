@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import {  MenuController } from '@ionic/angular';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -9,7 +9,8 @@ import {  MenuController } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private authService: AuthenticationService, public menuCtrl: MenuController) { }
+  todo = {};
+  constructor(private authService: AuthenticationService, public menuCtrl: MenuController, private router: Router) { }
   
 
   ngOnInit() {
@@ -17,6 +18,7 @@ export class LoginPage implements OnInit {
 
   login(){
     this.authService.login();
+    this.router.navigate(['members', 'dashboard','tab1']);
   }
   
   ionViewWillEnter() {
