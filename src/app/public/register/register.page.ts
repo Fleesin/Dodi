@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 
 
+const TOKEN_KEY = 'auth-token';
+
+
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.page.html',
@@ -17,4 +21,5 @@ export class RegisterPage implements OnInit {
   isAthenticated(): boolean{
     return this.authService.isAthenticated();
   }
+  
 }

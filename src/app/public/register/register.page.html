@@ -3,10 +3,31 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/login"></ion-back-button>
     </ion-buttons>
-    <ion-title>Register</ion-title>
+    <ion-title>Registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding>
+  <ion-card-content style="display: flex; justify-content: center; flex-direction: column">
+    <div id="txt_registro">
+      <span>Nombre</span>
+    </div>
+    <input type="text" id="box_type" name="name"><br>
+    <div id="txt_registro">
+      <span>Correo electronico</span>
+    </div>
+    <input type="text" id="box_type" name="email"><br>
+    <div id="txt_registro">
+      <span>Contraseña</span>
+    </div>
+    <input type="password" id="box_type" name="password"><br>
+    <div id="txt_registro">
+      <span>Dirección</span>
+    </div>
+    <input type="text" id="box_type" name="direccion"><br>
+    <div id="txt_registro">
+      <span></span>
+    </div>
+    <div align="center"><ion-button (click)= "isAthenticated()"  expand="">Registrarse</ion-button></div>
+  </ion-card-content>
 </ion-content>
