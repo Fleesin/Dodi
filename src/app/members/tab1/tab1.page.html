@@ -1,18 +1,24 @@
 <ion-header [translucent]="true" no-border>
-  <ion-toolbar>
+  
+  <ion-toolbar color="primary">
     <!--<ion-title>
       Tab 1
     </ion-title>-->
-    <ion-button color="null" width="42px" height="42px">
-      <ion-menu-button>      <img src="assets/imgs/menu_ic.png" width="40px" style="display:inline-block" height="40px"/>
-      </ion-menu-button>
-    </ion-button>
+
+        <ion-button slot= start color="null" width="42px" height="42px" >
+          <img src="assets/imgs/logo.png" width="40px" style="display:inline-block" height="40px"/>
+        </ion-button>
+     
+        <ion-buttons slot="end">
+          <ion-menu-button autoHide="false"></ion-menu-button>  <!-- todo toolbar tiene un boton de menu oculto -->
+        </ion-buttons>
+  
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
+    <ion-toolbar >
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
@@ -64,9 +70,6 @@
     </ion-card>
   
   </div>
-
-  
-
 
 </ion-content>
 
