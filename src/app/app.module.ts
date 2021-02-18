@@ -17,4 +17,4 @@ import { IonicStorageModule } from '@ionic/storage';
 })
 export class AppModule {}
 
-//Hola
+
