@@ -1,16 +1,16 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Mis Pedidos</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar >
-      <ion-title size="large">mis-pedido</ion-title>
-    </ion-toolbar>
-</ion-header>
-
 <ion-content>
+
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Mis Pedidos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-toolbar>
+    <ion-segment value="todos_los_Pedidos">
+      <ion-segment-button value="en_curso">En curso</ion-segment-button>
+      <ion-segment-button value="finalizados">Finalizados</ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 
 </ion-content>
