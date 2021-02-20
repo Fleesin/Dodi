@@ -6,54 +6,61 @@
 
 <ion-content>
   <ion-card>
+    <div class="cart-item">
+      <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title> -->
+      <div style= "justify-content: start; padding: 15px; width: 90%;">
+        <!-- style="display:flex; flex-direction: row; flex-wrap: wrap;" -->
+        <!-- justify-content: center; flex-direction: column" -->
+        <div style= "justify-content: start; padding: 15px; width: 90%;">
+          <!-- style="display:flex; flex-direction: row; flex-wrap: wrap;" -->
+          <!-- justify-content: center; flex-direction: column" -->
+          <div style="display:flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;" >
+    
+            <div id="productShopCar" class="container">
+              <img src="assets/imgs/comida_perro.jpg" margin="10px" align="left" width="50px" height="100px"/>
+            </div>
+    
+            <div class="product-detail-cart">
+              
+             <p class="product-cart-name"> <strong>Nombre producto </strong></p>
+              <div class="product-price-info">
+                <p class="product-price-unit">$$$</p>
+                <p class="product-quantity">x1</p>
+              </div>
 
-    <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-    <ion-card-title>Card Title</ion-card-title> -->
-    <div style= "justify-content: center;">
-      <!-- style="display:flex; flex-direction: row; flex-wrap: wrap;" -->
-      <!-- justify-content: center; flex-direction: column" -->
-      <div style="display:flex; flex-direction: row; flex-wrap: wrap;" >
+              <div class="product-tracking-detail">
+                <p class="product-tracking-label">EnvÃ­o</p>
+                <p class="product-tracking-value">$$$$</p>
+              </div>
 
-        <div id="productShopCar" class="container" style="">
-          <img src="assets/imgs/comida_perro.jpg" margin="10px" align="left" width="50px" height="100px"/>
+            </div>
+            
+          </div>
+    
+          <div class="product-cart-price">
+    
+            <div class="product-cart-price-label">
+              <strong>Total:</strong>
+            </div>
+    
+            <div class="product-cart-price-value">
+              50000
+            </div>
+
+          </div>
+    
+          <!-- <div>
+          </div> -->
+    
         </div>
 
-        <div>
-          <br>
-          Nombre producto 
-          <br>
-          $$$ x1
-          <br>
-          Envío $$$
-          <br>
+        <div class="cart-remove">
+          x
         </div>
 
       </div>
-
-      <div style="display:flex; flex-direction: row; ">
-
-        <div style="display:flex; justify-content: flex-start; flex-direction: column;">
-          <br>
-          Cantidad:
-          <br>
-          Total:
-          <br>
-        </div>
-
-        <div style="display:flex; justify-content: flex-end; flex-direction: column;">
-          <br>
-          1
-          <br>
-          $$$
-          <br>
-        </div>
-
-      </div>
-
-      <!-- <div>
-      </div> -->
-
     </div>
-
   </ion-card>
 </ion-content>
+  
