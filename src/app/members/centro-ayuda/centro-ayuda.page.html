@@ -3,15 +3,37 @@
     <ion-buttons slot="end">
       <ion-menu-button autoHide="false"></ion-menu-button>  <!-- todo toolbar tiene un boton de menu oculto -->
     </ion-buttons>
-    <ion-title>Centro Ayuda</ion-title>
+    <ion-title>Centro de ayuda</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">centro-ayuda</ion-title>
-    </ion-toolbar>
-  </ion-header>
-<ion-content>
+  <ion-card>
+    <div class="cart-item" style="display:flex; flex-direction: row; flex-wrap: wrap;">
+     
+      <div style= "justify-content: start; padding: 5px; width: 100%;">
+
+        <div id="productShopCar" class="container">
+          <img src="assets/imgs/logo.png" text-align: center width="150px" height="150px" />
+        </div>
+
+      </div>
+      
+      <div style="display:flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;" >
+
+        <div class="product-detail-cart">
+          <p class="product-cart-name"> <strong>Numero de contacto</strong></p>
+          <div class="product-tracking-detail">
+            <p class="product-tracking-label">3015043959 </p>
+          </div>
+
+          <p class="product-cart-name"> <strong>Correo electronico</strong></p>
+          <div class="product-tracking-detail">
+            <p class="product-tracking-label">mailto:pet.care.udc@gmail.com </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-card>
 </ion-content>
+

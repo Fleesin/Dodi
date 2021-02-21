@@ -2,6 +2,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 .boton{
     
     display: flex; 
@@ -51,14 +52,17 @@
 
     .action-button{
         display: flex;
-        justify-content: center;
+        justify-content: left;
         margin-bottom: 20px;
+     
         ion-button{
             text-transform: capitalize;
+            text-align: start;
             font-weight: 300;
             --background: #9e1e1e;
             --border-radius: 7px;
             --box-shadow: none;
+            
         }
         ion-icon{
             margin-right: 1px;
