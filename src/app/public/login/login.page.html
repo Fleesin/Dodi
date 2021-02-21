@@ -1,0 +1,23 @@
+<ion-content class="container">
+
+  <div class="login-logo" >
+    <img src="assets/icon/logo.png"  height="120px"  width="120px" />
+  </div>
+
+  <form class="login-form" (ngSubmit)="login()">
+    <div class="error-message">{{error}}</div>
+    <input type="text" class="email" [(ngModel)]="todo.email" name="email" placeholder="Correo electrónico" (click)="resetForm()" required/>
+  
+    <input  type="password" class="password" [(ngModel)]="todo.password" name="password" placeholder="Contraseña" (click)="resetForm()" required/>
+  
+    <button class="login-btn" >Ingresar</button>
+  </form>
+  
+  
+
+  <div class="register-link">
+ 
+      <p>¿Aún no tienes cuenta? <a  routerLink="/register" router-direction='forward'>Registrate.</a></p>
+
+  </div>
+</ion-content>

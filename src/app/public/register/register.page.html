@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card-content style="display: flex; justify-content: center; flex-direction: column">
+    <div id="txt_registro">
+      <span>Nombre</span>
+    </div>
+
+    <input type="text" id="box_type" [(ngModel)]="todo.name" class="name" name="name"><br>
+    <div id="txt_registro">
+      <span>Apellido</span>
+    </div>
+    <input type="text" id="box_type" [(ngModel)]="todo.lName" class="lName" name="lName" ><br>
+   
+    <div id="txt_registro">
+      <span>Correo electronico</span>
+    </div>
+    <input type="text" id="box_type" [(ngModel)]="todo.email"  class="email" name="email"><br>
+    
+    <div id="txt_registro">
+      <span>Contraseña</span>
+    </div>
+    <input type="password" id="box_type" [(ngModel)]="todo.password"  class="password" name="password"><br>
+    
+    <div id="txt_registro">
+      <span>Dirección</span>
+    </div>
+    <input type="text" id="box_type" [(ngModel)]="todo.direction" class="direction" name="direction" ><br>
+    
+    <ion-item>
+      <ion-label>Tipo documento</ion-label>
+      <ion-select [value]="['CC', 'TI', 'CE', 'NIT']"  type="text" id="box_type" [(ngModel)]="todo.tId" class="tId" name="tId" >
+        <ion-select-option value="CC">CC</ion-select-option>
+        <ion-select-option value="TI">TI</ion-select-option>
+        <ion-select-option value="CE">CE</ion-select-option>
+        <ion-select-option value="NIT">NIT</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <br>
+
+    <div id="txt_registro">
+      <span>Número de documento</span>
+    </div>
+    <input type="text" id="box_type" [(ngModel)]="todo.id" class="id" name="id" ><br>
+    
+    <div id="txt_registro">
+      <span>Número celular</span>
+    </div>
+    <input type="text" id="box_type" [(ngModel)]="todo.phone" class="phone" name="phone" ><br>
+   
+    <ion-item>
+      <ion-label>Mascotas</ion-label>
+      <ion-select multiple="true" [value]="['Ave', 'Perro', 'Gato', 'Tortuga']" type="text" id="box_type" [(ngModel)]="todo.pet" class="pet" name="pet" >
+        <ion-select-option value="bird">Ave</ion-select-option>
+        <ion-select-option value="cat">Gato</ion-select-option>
+        <ion-select-option value="dog">Perro</ion-select-option>
+        <ion-select-option value="turtle">Tortuga</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+    <div align="center"><ion-button (click)= "register()"  expand="">Registrarse</ion-button></div>
+
+  </ion-card-content>
+</ion-content>

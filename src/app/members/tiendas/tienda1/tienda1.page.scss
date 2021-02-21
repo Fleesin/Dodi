@@ -1,0 +1,45 @@
+.cart-item{
+    ion-icon{
+                align-content:center;
+                width: 25px;
+                font-size: 40px;
+                padding: 10px;
+            }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        .product-detail-cart{
+            width: 100%;
+            margin-left: 5px;
+            .product-cart-name, .product-quantity, .product-price-unit, .product-tracking-label, .product-tracking-value{
+                margin: 5px 0 5px 0;
+            }
+            .product-price-info{
+                display: flex;
+                flex-direction: row;
+        
+                .product-quantity{
+                    margin-left: 5px;
+                }
+            }
+        
+            .product-tracking-detail{
+                display: flex;
+                flex-direction: row;
+        
+                .product-tracking-value{
+                    margin-left: 5px;
+                }
+            }
+        }
+        
+        .product-cart-price{
+            // margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2px;
+        }
+    
+    }

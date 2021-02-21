@@ -1,0 +1,62 @@
+<ion-app>
+  <ion-menu menuId = "main-menu" contentId="main" type="overlay">
+      <ion-content>
+        <div class= "menu-header-bg">Menu</div>
+          <div class="header-content" >
+            <img  src="../assets/imgs/user_icon.png" alt="">
+            <ionlabel>
+              <h2>Nombre de usuario</h2>
+              <p>Descripcion usuario</p>
+            </ionlabel>
+          </div>
+        
+          <ion-list lines="none"> <!-- class="menu-items" -->
+            <ion-card>
+            <div id="boton" class="action-button"  >
+              <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/dashboard/mi-perfil" expand="block">
+                <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+                Mi perfil
+              </ion-button>
+            </div>
+            <div id="boton" class="action-button" >
+              <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/dashboard/mis-pedidos" color="secondary" expand="block" size="default" >
+                <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+                Mis pedidos
+              </ion-button>
+            </div>
+            <div class="action-button" id="boton" >
+              <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/dashboard/centro-ayuda" color="secondary" expand="block" size="default">
+                <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+                Centro de ayuda
+              </ion-button>
+            </div>
+            <br>
+            <br> 
+            <br>
+            
+            <div class="action-button" id="boton" >
+              <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/dashboard/centro-ayuda" color="secondary" expand="block" size="default">
+                <ion-icon slot="start" name=alert-circle-outline></ion-icon>
+                URGENCIA
+                <ion-icon slot="end" name=call-outline></ion-icon>
+              </ion-button>
+            </div>
+
+            <br> 
+            <br> 
+            <br>
+            <br>
+            
+          </ion-card>
+       </ion-list>
+    </ion-content>
+
+      <ion-button (click) = "logout()">
+        <ion-icon  name="exit-outline" slot="start"></ion-icon>
+        Logout
+      </ion-button>
+    
+  </ion-menu>
+  
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

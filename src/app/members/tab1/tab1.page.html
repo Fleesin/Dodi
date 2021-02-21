@@ -1,0 +1,94 @@
+<ion-header [translucent]="true" no-border>
+  
+  <ion-toolbar color="primary">
+    <!--<ion-title>
+      Tab 1
+    </ion-title>-->
+
+        <ion-tab-button id="boton2" slot="start">
+          <img src="assets/icon/logo2ico.png"  width="40px" style="display:inline-block" height="30px"/>
+        </ion-tab-button>
+ 
+        <ion-buttons slot="end">
+          <ion-menu-button autoHide="false"></ion-menu-button>  <!-- todo toolbar tiene un boton de menu oculto -->
+        </ion-buttons>
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar >
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title> -->
+      <img src="assets/imgs/discount.jpg" width="200px" height="100px" style="display: flex; justify-content: center; flex-direction: column"/>
+    </ion-card-header>
+  </ion-card>
+  <br>
+  <div align="center">
+    <ion-card style="width:8rem" button ="true" color = "primary" (click)="btnClicked()" routerLink = "/members/tiendas">
+      <ion-card-content  align-content="center">
+        <div class="cart-item" >
+          <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          <ion-card-title>Card Title</ion-card-title> -->
+          <div class="icon" align-content="center" style= " padding: 5px; width: 100%;">
+            <!-- style="display:flex; flex-direction: row; flex-wrap: wrap;" -->
+            <!-- justify-content: center; flex-direction: column" -->
+              <p class="product-cart-name" > <strong>Tiendas </strong></p>
+              <ion-icon name="storefront-outline"></ion-icon>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  
+  
+  <div id="productsHome" class="container" style="display:flex; flex-direction: row; flex-wrap: wrap;" >
+    
+    <ion-card style="width:8rem">
+      <ion-card-header>
+        <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title> -->
+        <img src="assets/imgs/comida_perro.jpg" width="100px" height="200px"/>
+      </ion-card-header>
+      
+      <ion-card-content>
+        
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card style="width:8rem">
+      <ion-card-header>
+        <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title> -->
+        <img src="assets/imgs/comida_perro.jpg" width="100px" height="200px"/>
+      </ion-card-header>
+      
+      <ion-card-content>
+        
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card style="width:8rem">
+      <ion-card-header>
+        <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title> -->
+        <img src="assets/imgs/comida_perro.jpg" width="100px" height="200px"/>
+      </ion-card-header>
+
+      <ion-card-content>
+        
+      </ion-card-content>
+    </ion-card>
+  
+  </div>
+
+</ion-content>
+
+<!--src="assets/imgs/logo.png"-->

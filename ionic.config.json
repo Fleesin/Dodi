@@ -1,0 +1,7 @@
+{
+  "name": "proyectDodi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/members/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Tiendas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card button ="true" (click)="btnClicked()" routerLink = "/members/tiendas/tienda1">
+    <div class="cart-item">
+      <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title> -->
+      <div style= "justify-content: start; padding: 5px; width: 100%;">
+        <!-- style="display:flex; flex-direction: row; flex-wrap: wrap;" -->
+        <!-- justify-content: center; flex-direction: column" -->
+        <div id="productShopCar" class="container">
+          <img src="assets/imgs/Vet_Francisco.png" align="left" width="100px" height="100px" />
+        </div>
+        <div style="display:flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;" >
+          <div class="product-detail-cart">
+            <p class="product-cart-name"> <strong>Consultorio Veterinario Dr. Francisco </strong></p>
+            <div class="product-price-info">
+              <p class="product-price-unit">Pedro de Heredia #73-95, Cartagena, Bolivar</p>
+            </div>
+
+            <div class="product-tracking-detail">
+              <p class="product-tracking-label"><b>Contacto:</b> 6632427 </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-card>
+  <ion-card button ="true" (click)="btnClicked()" routerLink = "/members/tiendas/tienda2">
+    <div class="cart-item">
+      <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title> -->
+      <div style= "justify-content: start; padding: 5px; width: 100%;">
+        <!-- style="display:flex; flex-direction: row; flex-wrap: wrap;" -->
+        <!-- justify-content: center; flex-direction: column" -->
+        <div id="productShopCar" class="container">
+          <img src="assets/imgs/Snoopy_Club.png" align="left" width="100px" height="100px" />
+        </div>
+        <div style="display:flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;" >
+          <div class="product-detail-cart">
+            <p class="product-cart-name"> <strong>Snoopy Club </strong></p>
+            <div class="product-price-info">
+              <p class="product-price-unit">Urbanización Santa Cruz Casa 3 Manga Cuarto Callejón, Cartagena, Bolivar</p>
+            </div>
+
+            <div class="product-tracking-detail">
+              <p class="product-tracking-label"><b>Contacto:</b> 3015043959 </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-card>
+  <ion-card button ="true" (click)="btnClicked()" routerLink = "/members/tiendas/tienda3">
+    <div class="cart-item">
+      <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title> -->
+      <div style= "justify-content: start; padding: 5px; width: 100%;">
+        <!-- style="display:flex; flex-direction: row; flex-wrap: wrap;" -->
+        <!-- justify-content: center; flex-direction: column" -->
+        <div id="productShopCar" class="container">
+          <img src="assets/imgs/pelu_mascotas.png" align="left" width="100px" height="100px" />
+        </div>
+        <div style="display:flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;" >
+          <div class="product-detail-cart">
+            <p class="product-cart-name"> <strong>Peluquería Caninos Y Felinos</strong></p>
+            <div class="product-price-info">
+              <p class="product-price-unit">Barrio Los Angeles, Cartagena, Bolivar</p>
+            </div>
+
+            <div class="product-tracking-detail">
+              <p class="product-tracking-label"><b>Contacto:</b> 3145322723 </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-card>
+</ion-content>
