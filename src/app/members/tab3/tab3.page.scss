@@ -6,6 +6,7 @@
 
     .product-detail-cart{
         width: 70%;
+        margin-left: 5px;
         .product-cart-name, .product-quantity, .product-price-unit, .product-tracking-label, .product-tracking-value{
             margin: 5px 0 5px 0;
         }
@@ -29,13 +30,18 @@
     }
     
     .product-cart-price{
+        // margin-top: 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 15px;
+        padding: 2px;
     }
 
-    .cart-remove{
-        width: 5%
+    .cart-remove {
+        ion-icon{
+            width: 25px;
+            font-size: 40px;
+            padding: 10px;
+        }
     }
 }
