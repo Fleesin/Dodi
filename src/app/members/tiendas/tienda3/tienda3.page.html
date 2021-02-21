@@ -3,10 +3,42 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/tiendas"></ion-back-button>
     </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button autoHide="false"></ion-menu-button>  <!-- todo toolbar tiene un boton de menu oculto -->
+    </ion-buttons>
     <ion-title>Peluquería Caninos Y Felinos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card button ="true">
+    <div class="cart-item">
+      <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title> -->
+      <div style= "justify-content: start; padding: 5px; width: 100%;">
+        <!-- style="display:flex; flex-direction: row; flex-wrap: wrap;" -->
+        <!-- justify-content: center; flex-direction: column" -->
+        <div id="productShopCar" class="container">
+          <img src="assets/imgs/pelu_mascotas.png" align="left" width="100px" height="100px" />
+        </div>
+        <div style="display:flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;" >
+          <div class="product-detail-cart">
+            <p class="product-cart-name"> <strong>Peluquería Caninos Y Felinos</strong></p>
+            <div class="product-price-info">
+              <p class="product-price-unit">Barrio Los Angeles, Cartagena, Bolivar</p>
+            </div>
 
+            <div class="product-tracking-detail">
+              <p class="product-tracking-label"><b>Contacto:</b> 3145322723 </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.4047650267744!2d-75.49249018478004!3d10.389391169057976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef625cfaa0ff3a1%3A0x87c208d62b047257!2sPeluqueria%20Caninos%20Y%20Felinos!5e0!3m2!1ses-419!2sco!4v1613936265283!5m2!1ses-419!2sco" width="100%" allowfullscreen="" loading="lazy"></iframe>
+  </ion-card>
 </ion-content>

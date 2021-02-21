@@ -3,10 +3,41 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/tiendas"></ion-back-button>
     </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button autoHide="false"></ion-menu-button>  <!-- todo toolbar tiene un boton de menu oculto -->
+    </ion-buttons>
     <ion-title>Snoopy Club</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card button ="true">
+    <div class="cart-item">
+      <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title> -->
+      <div style= "justify-content: start; padding: 5px; width: 100%;">
+        <!-- style="display:flex; flex-direction: row; flex-wrap: wrap;" -->
+        <!-- justify-content: center; flex-direction: column" -->
+        <div id="productShopCar" class="container">
+          <img src="assets/imgs/Snoopy_Club.png" align="left" width="100px" height="100px" />
+        </div>
+        <div style="display:flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;" >
+          <div class="product-detail-cart">
+            <p class="product-cart-name"> <strong>Snoopy Club </strong></p>
+            <div class="product-price-info">
+              <p class="product-price-unit">Urbanización Santa Cruz Casa 3 Manga Cuarto Callejón, Cartagena, Bolivar</p>
+            </div>
 
+            <div class="product-tracking-detail">
+              <p class="product-tracking-label"><b>Contacto:</b> 3015043959 </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-card>
+  <ion-card>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.08001075995!2d-75.53949798477993!3d10.415220068603679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62ff58ec4f0e9%3A0x5a81531b902e9278!2sSnoopy%20Club!5e0!3m2!1ses-419!2sco!4v1613936039916!5m2!1ses-419!2sco" width="100%"  allowfullscreen="" loading="lazy"></iframe>
+  </ion-card>
 </ion-content>
