@@ -14,6 +14,17 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  user_info = {
+    name: "",
+    lName: "",
+    email:"",
+    direction: "",
+    tId: "",
+    id:"",
+    phone: "",
+    pet:"",
+  };
+  info_user: any ={};
   constructor(
     private statusBar: StatusBar,
     private platform: Platform,
@@ -22,6 +33,20 @@ export class AppComponent {
     private router:Router
 
   ) {
+
+
+    this.info_user = JSON.parse(localStorage.getItem("user_data"))
+    this.user_info = {
+      name: this.info_user.name,
+      lName: this.info_user.lName,
+      email: this.info_user.email,
+      direction: this.info_user.direction,
+      tId:this.info_user.tId,
+      id: this.info_user.id,
+      phone: this.info_user.phone,
+      pet: this.info_user.pet,
+
+    };
     this.initializeApp();
   }
   logout(){
