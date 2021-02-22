@@ -4,16 +4,16 @@
         <div class= "menu-header-bg">Menu</div>
           <div class="header-content" >
             <img  src="../assets/imgs/user_icon.png" alt="">
-            <ionlabel>
+            <ion-label>
               <h2>Nombre de usuario</h2>
               <p>Descripcion usuario</p>
-            </ionlabel>
+            </ion-label>
           </div>
         
           <ion-list lines="none"> <!-- class="menu-items" -->
             <ion-card>
             <div id="boton" class="action-button"  >
-              <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/dashboard/mi-perfil" (click)="user()" expand="block">
+              <ion-button color="secondary" routerLink="/members/dashboard/mi-perfil" expand="block">
                 <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
                 Mi perfil
               </ion-button>
