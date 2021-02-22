@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import {  MenuController } from '@ionic/angular';
 
@@ -9,10 +9,13 @@ import {  MenuController } from '@ionic/angular';
 })
 export class MisPedidosPage implements OnInit {
 
+
   constructor(private authService: AuthenticationService, public menuCtrl: MenuController) {}
 
   ngOnInit() {
+
   }
+
   logout(){
     this.authService.logout();
   }

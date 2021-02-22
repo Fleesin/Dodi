@@ -13,13 +13,13 @@
           <ion-list lines="none"> <!-- class="menu-items" -->
             <ion-card>
             <div id="boton" class="action-button"  >
-              <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/dashboard/mi-perfil" expand="block">
+              <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/dashboard/mi-perfil" (click)="user()" expand="block">
                 <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
                 Mi perfil
               </ion-button>
             </div>
             <div id="boton" class="action-button" >
-              <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/dashboard/mis-pedidos" (click)="getUser()" color="secondary" expand="block" size="default" >
+              <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/dashboard/mis-pedidos"  color="secondary" expand="block" size="default" >
                 <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
                 Mis pedidos
               </ion-button>
@@ -31,7 +31,7 @@
               </ion-button>
             </div>
             <br>
-            <br> 
+            <br>
             <br>
             <div class="action-button" id="boton" >
               <ion-button (click)="btnClicked()" color="secondary" routerLink="/members/dashboard/emergency" color="secondary" expand="block" size="default">

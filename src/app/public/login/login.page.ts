@@ -35,6 +35,7 @@ export class LoginPage implements OnInit {
     this.authService.login(this.todo.email, this.todo.password).subscribe(
       res => {
         console.log("todo ok", res);
+        localStorage.setItem("user_data", JSON.stringify(res));
         this.authService.authenticationState.next(true);
         this.router.navigate(['members', 'dashboard','tab1']);
       },
