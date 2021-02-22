@@ -52,9 +52,24 @@ export class AuthenticationService {
     return this.http.post<User>(constants.URL_API+constants.REGISTER_ENDPOINT, body, {
       headers: this.headers,
     });
-
   }
 
+  getUser(name:String, lName:String, email:String,  direction:String, tId: String,id:String , phone:String, pet:String){
+    let body = JSON.stringify(
+      {
+        name: name,
+        lName: lName,
+        email: email,
+        direction: direction,
+        tId: tId,
+        id: id,
+        phone: phone,
+        pet: pet
+      }
+    );
+    return this.http.get<User>(constants.URL_API+constants.GET_ENDPOINT);
+  }
+  
   logout(){
     return this.storage.remove(TOKEN_KEY).then(()=> {
       this.authenticationState.next(false);

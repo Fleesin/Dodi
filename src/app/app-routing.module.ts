@@ -23,7 +23,6 @@ const routes: Routes = [
     canActivate: [AuthGuardService],
     loadChildren: () => import('./members/member-routing.module').then( m => m.MemberRoutingModule)
   },
- 
   
 
 ];

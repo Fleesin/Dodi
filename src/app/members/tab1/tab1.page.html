@@ -5,13 +5,13 @@
       Tab 1
     </ion-title>-->
 
-        <ion-tab-button id="boton2" slot="start">
-          <img src="assets/icon/logo2ico.png"  width="40px" style="display:inline-block" height="30px"/>
-        </ion-tab-button>
- 
-        <ion-buttons slot="end">
-          <ion-menu-button autoHide="false"></ion-menu-button>  <!-- todo toolbar tiene un boton de menu oculto -->
-        </ion-buttons>
+    <ion-tab-button class="logoButton" id="boton2" slot="start">
+      <img src="assets/icon/logo2ico.png"  width="40px" style="display:inline-block" height="30px"/>
+    </ion-tab-button>
+
+    <ion-buttons slot="end">
+      <ion-menu-button autoHide="false"></ion-menu-button>  <!-- todo toolbar tiene un boton de menu oculto -->
+    </ion-buttons>
   
   </ion-toolbar>
 </ion-header>
@@ -51,42 +51,76 @@
   
   <div id="productsHome" class="container" style="display:flex; flex-direction: row; flex-wrap: wrap;" >
     
-    <ion-card style="width:8rem">
+    <ion-card style="width:8rem" button ="true" (click)="btnClicked()" routerLink = "/members/tiendas/tienda2">
       <ion-card-header>
         <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
         <ion-card-title>Card Title</ion-card-title> -->
-        <img src="assets/imgs/comida_perro.jpg" width="100px" height="200px"/>
+        <img src="assets/imgs/arenera.png" width="100%"/>
       </ion-card-header>
       
       <ion-card-content>
-        
+        <p class="product-cart-name"> <strong>Arenera</strong></p>
       </ion-card-content>
     </ion-card>
 
-    <ion-card style="width:8rem">
-      <ion-card-header>
+    <ion-card style="width:8rem" button ="true" (click)="btnClicked()" routerLink = "/members/tiendas/tienda2">
+      <ion-card-header class="prueba">
         <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
         <ion-card-title>Card Title</ion-card-title> -->
-        <img src="assets/imgs/comida_perro.jpg" width="100px" height="200px"/>
+        <img src="assets/imgs/comida_perro.jpg" width="100%"/>
       </ion-card-header>
       
       <ion-card-content>
-        
+        <p class="product-cart-name"> <strong>Pedigree Adulto</strong></p>
       </ion-card-content>
     </ion-card>
 
-    <ion-card style="width:8rem">
+    <ion-card style="width:8rem" button ="true" (click)="btnClicked()" routerLink = "/members/tiendas/tienda2">
       <ion-card-header>
         <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
         <ion-card-title>Card Title</ion-card-title> -->
-        <img src="assets/imgs/comida_perro.jpg" width="100px" height="200px"/>
+        <img src="assets/imgs/paseo_perro.jpeg" width="100%"/>
+      </ion-card-header>
+      
+      <ion-card-content >
+        <p class="product-cart-name"> <strong>Servicio de paseo</strong></p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card style="width:8rem" button ="true" (click)="btnClicked()" routerLink = "/members/tiendas/tienda2">
+      <ion-card-header>
+        <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title> -->
+        <img src="assets/imgs/jaula-pajaro.png" width="100%"/>
       </ion-card-header>
 
       <ion-card-content>
-        
+        <p class="product-cart-name"> <strong>Jaula mediana para pajaros</strong></p>
+      </ion-card-content>
+
+    </ion-card>
+    <ion-card style="width:8rem" button ="true" (click)="btnClicked()" routerLink = "/members/tiendas/tienda1">
+      <ion-card-header>
+        <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title> -->
+        <img src="assets/imgs/vet_serv.jpg" width="100%"/>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p class="product-cart-name"> <strong>Servicio Veterinario</strong></p>
       </ion-card-content>
     </ion-card>
-  
+    <ion-card style="width:8rem" button ="true" (click)="btnClicked()" routerLink = "/members/tiendas/tienda3">
+      <ion-card-header>
+        <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title> -->
+        <img src="assets/imgs/pel_perro.jpg" width="100%"/>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="product-cart-name"> <strong>Servicio Peluquería</strong></p>
+      </ion-card-content>
+    </ion-card>
+
   </div>
 
 </ion-content>
